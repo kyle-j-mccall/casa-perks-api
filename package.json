@@ -1,0 +1,28 @@
+{
+  "name": "casa-perks-api",
+  "version": "1.0.0",
+  "description": "CasaPerks Rewards Dashboard API",
+  "main": "dist/server.js",
+  "scripts": {
+    "dev": "ts-node server.ts",
+    "build": "tsc",
+    "start": "node dist/server.js"
+  },
+  "prisma": {
+    "seed": "ts-node prisma/seed.ts"
+  },
+  "dependencies": {
+    "@prisma/client": "^6.19.2",
+    "cors": "^2.8.6",
+    "express": "^5.2.1",
+    "express-rate-limit": "^8.2.1",
+    "prisma": "^6.19.2"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.1",
+    "@types/node": "^22.13.9",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.2"
+  }
+}
